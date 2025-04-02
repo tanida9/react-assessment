@@ -1,7 +1,14 @@
 import React from "react";
+import Home from "./Home";
+import GetUsers from "../components/GetUsers";
 
 const User = () => {
-    return ();
+    return (
+        <div>
+            <Home />
+            <GetUsers />
+        </div>
+    );
 };
 
 export default User;
