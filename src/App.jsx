@@ -4,8 +4,6 @@ import Home from "./pages/Home";
 import Owner from "./pages/Owner";
 import User from "./pages/User";
 import Admin from "./pages/Admin";
-import GetUsers from "./components/GetUsers";
-import DeleteUser from "./components/DeleteUser";
 
 const router = createBrowserRouter([
   {
@@ -21,9 +19,6 @@ const router = createBrowserRouter([
       { path: "owner", element: <Owner /> },
       { path: "user", element: <User /> },
       { path: "admin", element: <Admin /> },
-      { path: "getUsers", element: <GetUsers /> },
-      { path: "deleteUsers", element: <DeleteUser /> },
-
     ],
   },
 ]);

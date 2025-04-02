@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import DeleteUser from "./DeleteUser";
 
 const GetUsers = () => {
   const [users, setUsers] = useState([]);
@@ -59,10 +58,11 @@ const GetUsers = () => {
                 <td className="border border-gray-300 py-2 px-4">{user.lastname}</td>
                 <td className="border border-gray-300 py-2 px-4">{user.position}</td>
                 <td className="border border-gray-300 py-2 px-4">
-                  <DeleteUser />
+                  <button type="submit" className="bg-red-600 text-white px-4 py-1 rounded hover:bg-red-700">
+                    Delete User
+                  </button>
                 </td>
               </tr>
-
             )
             )}
           </tbody>
